@@ -1,10 +1,10 @@
+import { Transaction } from './transaction/entities/transaction.entity';
 import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TransactionModule } from './transaction/transaction.module';
+import { ConfigModule } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { Transaction } from './transaction/entities/transaction.entity';
 
 @Module({
   imports: [
