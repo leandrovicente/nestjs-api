@@ -4,7 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TransactionModule } from './transaction/transaction.module';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { Transaction } from 'sequelize/types';
+import { Transaction } from './transaction/entities/transaction.entity';
 
 @Module({
   imports: [
